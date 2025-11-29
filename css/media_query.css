@@ -2,77 +2,78 @@
 /*           RESPONSIVE BREAKPOINTS         */
 /* ========================================= */
 
-@media (max-width: 767px) {
-    
-    nav .nav-menu i {
+@media (max-width: 599px) 
+{
+    nav
+    {
+        background-color: transparent;
+    }
+    nav .nav-logo , nav .nav-social
+    {
+       opacity: 0;
+    }
+    nav .nav-menu i 
+    {   
         color: #fff;
     }
-
-    #search {
-        width: 75% !important;
-    }
-
-    .item{
-        width: 200px;
+    #search
+    {
+        width: 75%!important;
     }
 }
-
-
-@media (max-width: 991px) {
-    .overlay .title {
-        font-size: clamp(18px, 4vw, 30px);
+@media (min-width: 600px) and (max-width:767px) 
+{
+    nav
+    {
+        background-color: transparent;
     }
-
-    .overlay .desc {
-        font-size: clamp(12px, 2.5vw, 16px);
+    nav .nav-logo , nav .nav-social
+    {
+       opacity: 0;
     }
-
-    .overlay .date {
-        margin-bottom: 0;
+    nav .nav-menu i 
+    {
+        color: #fff;
     }
-}
-
-
-@media (max-width: 991px) {
-
-    #hero.shift .col-lg-4,
-    #contact.shift .col-lg-4 {
-        flex: 0 0 45%;
-        max-width: 45%;
+    #search
+    {
+        width: 75%!important;
     }
 }
-
-@media (max-width: 600px) {
-
-    #hero.shift .col-lg-4,
-    #contact.shift .col-lg-4 {
-        flex: 0 0 90%;
-        max-width: 90%;
+@media (min-width: 768px) and (max-width:991px) {
+    nav
+    {
+        background-color: transparent;
     }
+    nav .nav-logo , nav .nav-social
+    {
+       opacity: 0;
+    }
+    nav .nav-menu i 
+    {
+        color: #fff;
+    }
+    #search
+    {
+        width: 75%!important;
+    }
+    .overlay .title
+    {
+       font-size: 25px;
+    }
+    
 }
-
-@media (max-width: 600px) {
-    #back-to-top {
-        height: 35px;
-        width: 35px;
-        bottom: 10px;
-        right: 10px;
+@media (min-width: 992px) and (max-width:1199px) {
+    .overlay .title
+    {
+       font-size: 22px;
     }
-
-    #back-to-top i {
-        width: 35px;
-        height: 35px;
+    .overlay .desc
+    {
+       font-size: 14px;
     }
-}
-
-@media (max-width: 991px) {
-    .side-nav {
-        width: 200px;
-        margin-left: -200px;
-    }
-
-    #hero.shift,
-    #contact.shift {
-        margin-left: 260px;
+    .overlay .date
+    {
+       margin-bottom: 0px;
     }
 }
