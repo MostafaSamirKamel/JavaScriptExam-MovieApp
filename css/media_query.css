@@ -315,7 +315,7 @@ footer p a {
 }
 
 @media (max-width: 390px) {
- #bar-nav .menu ul {
+    #bar-nav .menu ul {
         flex-direction: row;
         gap: 5px;
         padding: 5px 0;
@@ -330,7 +330,7 @@ footer p a {
         display: flex;
     }
 
- #bar-nav .menu ul li a {
+    #bar-nav .menu ul li a {
         font-size: 8px;
         padding: 8px 0;
         text-align: center;
@@ -338,4 +338,43 @@ footer p a {
         color: #000 !important;
     }
 
+    #hero,
+    #contact {
+        margin-left: 0 !important; 
+        margin-top: 180px !important;
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    #bar-nav .menu ul {
+        flex-direction: row;
+        gap: 5px;
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-top: 1px solid #444;
+    }
+
+    #bar-nav .menu ul.active {
+        display: flex;
+    }
+
+    #bar-nav .menu ul li a {
+        font-size: 8px;
+        padding: 8px 0;
+        text-align: center;
+        width: 85%;
+        color: #000 !important;
+    }
+
+    #hero,
+    #contact {
+        margin-left: 0 !important; 
+        margin-top: 180px !important;
+        padding: 0 10px;
+    }
 }
