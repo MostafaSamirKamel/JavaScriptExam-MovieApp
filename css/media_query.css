@@ -2,82 +2,205 @@
 /*                RESPONSIVE                 */
 /* ========================================= */
 
-/* ======== PHONES 480px - 767px ======== */
-@media (min-width: 480px) and (max-width: 767px) {
-
-    .side-nav {
-        width: 170px !important;
-        margin-left: -170px !important;
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    #hero, #contact {
+        margin-left: 100px;
     }
-
-    .side-nav.open {
-        margin-left: 0 !important;
+    
+    .overlay .title {
+        font-size: 28px;
     }
-
-    nav.shift {
-        margin-left: 170px !important;
-    }
-
-    #hero,
-    #contact {
-        margin-left: 100 !important;
-        width: 500px;
-    }
-
-    #hero.shift,
-    #contact.shift {
-        margin-left: calc(60px + 170px + 40px) !important;
-        width: 400px;
-    }
-    #contact.shift {margin-right: 30px;}
-
-    /* ONE CARD */
-    #hero .col-lg-4,
-    #contact .col-lg-4,
-    #hero.shift .col-lg-4,
-    #contact.shift .col-lg-4 {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        margin-bottom: 25px !important;
+    
+    .overlay .desc {
+        font-size: 14px;
     }
 }
 
-/* ======== TABLETS 768px - 991px (2 CARDS) ======== */
-@media (min-width: 768px) and (max-width: 991px) {
-
-    .side-nav {
-        width: 170px !important;
-        margin-left: -170px !important;
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #hero, #contact {
+        margin-left: 80px;
     }
-
-    .side-nav.open {
-        margin-left: 0 !important;
+    
+    #hero.shift, #contact.shift {
+        margin-left: 330px;
     }
-
-    nav.shift {
-        margin-left: 170px !important;
+    
+    .item {
+        width: 95%;
     }
-
-    #hero,
-    #contact {
-        margin-left: 100 !important;
-     
+    
+    .overlay .title {
+        font-size: 24px;
     }
-
-    #hero.shift,
-    #contact.shift {
-        margin-left: calc(60px + 190px) !important;
-        width: 600px;
+    
+    nav .nav-menu i {
+        font-size: 22px;
     }
-    #contact.shift {margin-right: 30px;}
-
-    /* TWO CARDS */
-    #hero .col-lg-4,
-    #contact .col-lg-4,
-    #hero.shift .col-lg-4,
-    #contact.shift .col-lg-4 {
-        flex: 0 0 48% !important;
-        max-width: 48% !important;
-        margin-bottom: 25px !important;
+    
+    nav .nav-logo img {
+        height: 40px;
     }
 }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #hero, #contact {
+        margin-left: 60px;
+    }
+    
+    #hero.shift, #contact.shift {
+        margin-left: 310px;
+    }
+    
+    .side-nav {
+        width: 200px;
+        margin-left: -200px;
+    }
+    
+    nav.shift {
+        margin-left: 200px;
+    }
+    
+    .menu ul {
+        height: auto;
+    }
+    
+    .overlay {
+        padding: 15px;
+    }
+    
+    .overlay .title {
+        font-size: 20px;
+    }
+    
+    .overlay .vote {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    #search {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #hero, #contact {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+    
+    #hero.shift, #contact.shift {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    /* Hide main nav on very small screens when sidebar is open */
+    nav.shift {
+        display: none;
+    }
+    
+    .side-nav {
+        width: 100%;
+        margin-left: -100%;
+    }
+    
+    .side-nav.open {
+        margin-left: 0;
+    }
+    
+    .item {
+        width: 100%;
+    }
+    
+    #hero.shift .col-lg-4,
+    #contact.shift .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .overlay .title {
+        font-size: 18px;
+    }
+    
+    .overlay .desc {
+        font-size: 12px;
+    }
+    
+    .form-input::placeholder {
+        font-size: 14px;
+    }
+    
+    .rights {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .icon-social {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    nav {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        z-index: 9999;
+    }
+    
+    nav .nav-logo {
+        padding: 5px 0;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    nav .nav-logo img {
+        height: 35px;
+    }
+    
+    nav .nav-menu {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        left: auto;
+        transform: translateY(-50%);
+    }
+    
+    nav .nav-social {
+        display: none;
+    }
+    
+    .menu ul li a {
+        font-size: 16px;
+    }
+    
+    #back-to-top {
+        bottom: 70px;
+        right: 15px;
+    }
+}
+
+/* Mobile landscape orientation */
+@media (max-width: 767.98px) and (orientation: landscape) {
+    .menu ul {
+        height: 200px;
+        overflow-y: auto;
+    }
+    
+    .side-nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
