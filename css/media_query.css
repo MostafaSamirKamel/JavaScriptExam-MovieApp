@@ -2,144 +2,33 @@
 /*           RESPONSIVE BREAKPOINTS         */
 /* ========================================= */
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    .container-xxl {
-        max-width: 1320px;
+/* Mobile First: Small devices (phones, 0px to 599px) */
+@media (max-width: 599px) {
+    nav {
+        background-color: transparent;
     }
     
-    #hero, #contact {
-        margin-left: 150px;
+    nav .nav-logo,
+    nav .nav-social {
+        opacity: 0;
+        pointer-events: none;
     }
     
-    .item {
-        width: 85%;
-    }
-}
-
-/* X-Large devices (large desktops, 1200px to 1399.98px) */
-@media (max-width: 1399.98px) and (min-width: 1200px) {
-    .container-xl {
-        max-width: 1140px;
-    }
-}
-
-/* Large devices (desktops, 992px to 1199.98px) */
-@media (max-width: 1199.98px) {
-    #hero, #contact {
-        margin-left: 100px;
+    nav .nav-menu i {
+        color: #fff;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
     }
     
-    #hero.shift, #contact.shift {
-        margin-left: 350px;
+    #search {
+        width: 75% !important;
+        margin: 0 auto;
+        display: block;
     }
     
-    .overlay .title {
-        font-size: 1.75rem;
-        line-height: 1.3;
-    }
-    
-    .overlay .desc {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-    
+    /* Additional mobile optimizations */
     .cardImage {
         height: 280px;
-    }
-    
-    .cardImage img {
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-/* Medium devices (tablets, 768px to 991.98px) */
-@media (max-width: 991.98px) {
-    #hero, #contact {
-        margin-left: 80px;
-        padding: 0 1rem;
-    }
-    
-    #hero.shift, #contact.shift {
-        margin-left: 330px;
-        width: calc(100% - 330px);
-    }
-    
-    .side-nav {
-        width: 250px;
-    }
-    
-    nav.shift {
-        margin-left: 250px;
-    }
-    
-    .item {
-        width: 95%;
-        margin-bottom: 1.5rem;
-    }
-    
-    .overlay {
-        padding: 1.5rem;
-    }
-    
-    .overlay .title {
-        font-size: 1.5rem;
-        margin-bottom: 0.75rem;
-    }
-    
-    .overlay .date {
-        font-size: 0.875rem;
-    }
-    
-    .overlay .vote {
-        width: 45px;
-        height: 45px;
-        font-size: 0.9rem;
-    }
-    
-    /* Improve touch targets for mobile */
-    nav .nav-menu i,
-    .nav-social i {
-        min-width: 44px;
-        min-height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-/* Small devices (landscape phones, 576px to 767.98px) */
-@media (max-width: 767.98px) {
-    #hero, #contact {
-        margin-left: 60px;
-        padding: 0 0.75rem;
-    }
-    
-    #hero.shift, #contact.shift {
-        margin-left: 310px;
-        width: calc(100% - 310px);
-    }
-    
-    .side-nav {
-        width: 250px;
-    }
-    
-    .menu ul {
-        height: auto;
-        max-height: 60vh;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .menu ul li a {
-        padding: 0.75rem 0;
-        font-size: 1.1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    .cardImage {
-        height: 250px;
     }
     
     .overlay {
@@ -147,297 +36,235 @@
     }
     
     .overlay .title {
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.375rem;
+        line-height: 1.3;
+        margin-bottom: 0.75rem;
     }
     
     .overlay .desc {
-        font-size: 0.85rem;
+        font-size: 0.875rem;
         line-height: 1.4;
-    }
-    
-    /* Form adjustments */
-    .form-input {
-        font-size: 16px; /* Prevents zoom on iOS */
-    }
-    
-    .sub-btn {
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
-        min-height: 44px;
     }
 }
 
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    /* Mobile-first layout */
-    #hero, #contact {
-        margin-left: 0;
-        padding: 0 0.5rem;
-        width: 100%;
-    }
-    
-    #hero.shift, #contact.shift {
-        margin-left: 0;
-        width: 100%;
-    }
-    
-    /* Mobile navigation */
+/* Small to Medium devices (large phones, small tablets 600px to 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
     nav {
-        width: 100%;
-        height: 60px;
-        position: fixed;
-        bottom: 0;
-        top: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 1rem;
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        background-color: transparent;
     }
     
-    nav .nav-logo {
-        padding: 0;
-        position: static;
-        transform: none;
-    }
-    
-    nav .nav-logo img {
-        height: 32px;
-        width: auto;
-    }
-    
-    nav .nav-menu {
-        position: static;
-        transform: none;
-    }
-    
+    nav .nav-logo,
     nav .nav-social {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
     
-    /* Full-screen sidebar on mobile */
-    .side-nav {
-        width: 100%;
-        height: 100vh;
-        margin-left: -100%;
-        padding: 2rem 1.5rem;
+    nav .nav-menu i {
+        color: #fff;
+        font-size: 1.625rem;
     }
     
-    .side-nav.open {
-        margin-left: 0;
+    #search {
+        width: 75% !important;
+        max-width: 400px;
+        margin: 0 auto;
     }
     
-    nav.shift {
-        margin-left: 0;
-        display: none;
+    /* Tablet optimizations */
+    .cardImage {
+        height: 320px;
     }
     
-    /* Content adjustments */
-    .item {
-        width: 100%;
+    .overlay .title {
+        font-size: 1.5rem;
+    }
+    
+    .overlay .desc {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    nav {
+        background-color: transparent;
+        position: relative;
+        z-index: 1000;
+    }
+    
+    nav .nav-logo,
+    nav .nav-social {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    
+    nav .nav-menu i {
+        color: #fff;
+        font-size: 1.75rem;
+        transition: color 0.3s ease;
+    }
+    
+    #search {
+        width: 75% !important;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .overlay .title {
+        font-size: 1.75rem;
+        line-height: 1.3;
         margin-bottom: 1rem;
     }
     
+    .overlay .desc {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    /* Additional tablet optimizations */
     .cardImage {
-        height: 220px;
+        height: 350px;
     }
     
     .overlay {
-        padding: 1rem;
+        padding: 1.5rem;
     }
     
+    /* Ensure content doesn't get too wide */
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
     .overlay .title {
-        font-size: 1.125rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 0.875rem;
+    }
+    
+    .overlay .desc {
+        font-size: 0.875rem;
+        line-height: 1.5;
     }
     
     .overlay .date {
-        font-size: 0.8rem;
+        margin-bottom: 0;
+        font-size: 0.875rem;
     }
     
-    .overlay .desc {
-        font-size: 0.8rem;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-    
-    .overlay .vote {
-        width: 40px;
-        height: 40px;
-        font-size: 0.8rem;
-    }
-    
-    /* Form mobile optimization */
-    .form-input {
-        padding: 0.75rem;
-        font-size: 16px; /* Prevents zoom on iOS */
-    }
-    
-    .form-input::placeholder {
-        font-size: 0.9rem;
-    }
-    
-    .showPass {
-        bottom: -15px;
-        right: 15px;
-    }
-    
-    /* Footer/sidebar content mobile optimization */
-    .rights {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        margin-top: 2rem;
-        text-align: center;
-    }
-    
-    .rights p {
-        font-size: 0.8rem;
-    }
-    
-    .icon-social {
-        text-align: center;
-        margin: 1.5rem 0;
-    }
-    
-    .icon-social a {
-        padding: 0 0.5rem;
-        font-size: 1.1rem;
-    }
-    
-    /* Back to top button mobile positioning */
-    #back-to-top {
-        bottom: 70px;
-        right: 20px;
-        width: 44px;
-        height: 44px;
-    }
-    
-    #back-to-top i {
-        width: 44px;
-        height: 44px;
-        font-size: 1.1rem;
-    }
-}
-
-/* Mobile landscape orientation optimization */
-@media (max-width: 767.98px) and (orientation: landscape) {
-    .side-nav {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    
-    .menu ul {
-        max-height: 50vh;
-    }
-    
+    /* Desktop optimizations */
     .cardImage {
-        height: 200px;
-    }
-    
-    .overlay .desc {
-        -webkit-line-clamp: 2;
-    }
-}
-
-/* Foldable devices and very small screens */
-@media (max-width: 330px) {
-    #hero, #contact {
-        padding: 0 0.25rem;
+        height: 380px;
     }
     
     .overlay {
-        padding: 0.75rem;
+        padding: 1.75rem;
     }
     
-    .overlay .title {
-        font-size: 1rem;
-    }
-    
-    .overlay .vote {
-        width: 35px;
-        height: 35px;
-        font-size: 0.75rem;
-    }
-    
-    nav {
-        padding: 0 0.5rem;
-    }
-    
-    nav .nav-logo img {
-        height: 28px;
+    /* Ensure proper container width */
+    .container {
+        max-width: 960px;
     }
 }
 
-/* High-DPI displays optimization */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .nav-logo img {
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .overlay .title {
+        font-size: 2rem;
+        line-height: 1.2;
     }
     
-    .cardImage img {
-        image-rendering: auto;
+    .overlay .desc {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .cardImage {
+        height: 400px;
+    }
+    
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* ========================================= */
+/*        ENHANCED INTERACTION STATES       */
+/* ========================================= */
+
+/* Hover states for larger screens */
+@media (min-width: 992px) {
+    nav .nav-menu i:hover {
+        color: #ff655c;
+        transform: scale(1.1);
+    }
+    
+    #search:focus {
+        transform: scale(1.02);
+        box-shadow: 0 4px 15px rgba(255, 101, 92, 0.2);
+    }
+}
+
+/* Touch device optimizations */
+@media (max-width: 991px) {
+    /* Larger touch targets */
+    nav .nav-menu i {
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #search {
+        min-height: 44px;
+    }
+    
+    /* Prevent hover effects on touch devices */
+    .cardImage:hover img {
+        transform: none;
+    }
+}
+
+/* High-DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .nav-menu i {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 }
 
 /* Reduced motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-    
-    html {
-        scroll-behavior: auto !important;
-    }
-    
-    .cardImage img {
-        transition: none !important;
-    }
-    
-    .overlay {
-        transition: opacity 0.1s ease-in-out !important;
+    nav .nav-menu i,
+    #search {
+        transition: none;
     }
 }
 
-/* Dark mode support */
+/* Dark mode consistency */
 @media (prefers-color-scheme: dark) {
-    /* Already using dark theme, but ensure compatibility */
-    body {
-        background-color: #0D0D0D;
+    nav .nav-menu i {
+        color: #fff !important;
+    }
+    
+    #search {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
     }
 }
 
-/* Print styles */
+/* ========================================= */
+/*        PRINT STYLES ENHANCEMENT         */
+/* ========================================= */
+
 @media print {
-    nav, 
-    .side-nav, 
-    #back-to-top,
-    .nav-social,
-    .sub-btn {
+    nav,
+    #search {
         display: none !important;
-    }
-    
-    #hero, #contact {
-        margin-left: 0 !important;
-        width: 100% !important;
-        padding: 0 !important;
-    }
-    
-    body {
-        background-color: white !important;
-        color: black !important;
-        font-family: "Times New Roman", serif !important;
-    }
-    
-    .cardImage img {
-        filter: grayscale(100%) !important;
-        border: 1px solid #ddd !important;
     }
     
     .overlay {
@@ -445,74 +272,56 @@
         opacity: 1 !important;
         visibility: visible !important;
         background: transparent !important;
-        color: black !important;
-        padding: 0 !important;
-        margin-top: 0.5rem;
+        color: #000 !important;
     }
     
     .overlay .title {
-        color: black !important;
-        font-size: 1.2rem !important;
+        color: #000 !important;
+        font-size: 1.25rem !important;
     }
     
     .overlay .desc {
         color: #333 !important;
     }
+}
+
+/* ========================================= */
+/*        LANDSCAPE ORIENTATION            */
+/* ========================================= */
+
+@media (max-width: 991px) and (orientation: landscape) {
+    .cardImage {
+        height: 250px;
+    }
     
-    a {
-        color: black !important;
-        text-decoration: underline !important;
+    .overlay .title {
+        font-size: 1.25rem;
+    }
+    
+    .overlay .desc {
+        font-size: 0.8rem;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }
 
-/* Touch device optimization */
-@media (hover: none) and (pointer: coarse) {
-    .cardImage:hover img {
-        transform: none !important;
-    }
-    
-    .menu ul li a:hover {
-        color: #F8F6F6 !important;
-    }
-    
-    .menu ul li a:active {
-        color: #ff655c !important;
-    }
-    
-    /* Larger touch targets */
-    .nav-menu i,
-    .nav-social i,
-    .icon-social a {
-        min-width: 44px;
-        min-height: 44px;
-    }
-}
+/* ========================================= */
+/*        FOLDABLE DEVICES SUPPORT         */
+/* ========================================= */
 
-/* Professional grid system for larger screens */
-@media (min-width: 768px) {
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -0.75rem;
+@media (max-width: 330px) {
+    #search {
+        width: 85% !important;
+        font-size: 14px;
     }
     
-    .col-md-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding: 0 0.75rem;
+    .overlay .title {
+        font-size: 1.125rem;
     }
     
-    .col-md-4 {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-        padding: 0 0.75rem;
-    }
-}
-
-/* Smooth scaling for ultra-wide screens */
-@media (min-width: 1600px) {
-    .container-fluid {
-        max-width: 1600px;
-        margin: 0 auto;
+    nav .nav-menu i {
+        font-size: 1.375rem;
     }
 }
