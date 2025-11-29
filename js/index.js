@@ -104,3 +104,7 @@ import { formValidations } from "./validation.js";
 $(document).ready(function () {
     formValidations();
 });
+
+
+
+
