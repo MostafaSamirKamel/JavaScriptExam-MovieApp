@@ -1,0 +1,83 @@
+/* ========================================= */
+/*                RESPONSIVE                 */
+/* ========================================= */
+
+/* ======== PHONES 480px - 767px ======== */
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .side-nav {
+        width: 170px !important;
+        margin-left: -170px !important;
+    }
+
+    .side-nav.open {
+        margin-left: 0 !important;
+    }
+
+    nav.shift {
+        margin-left: 170px !important;
+    }
+
+    #hero,
+    #contact {
+        margin-left: 100 !important;
+        width: 500px;
+    }
+
+    #hero.shift,
+    #contact.shift {
+        margin-left: calc(60px + 170px + 40px) !important;
+        width: 400px;
+    }
+    #contact.shift {margin-right: 30px;}
+
+    /* ONE CARD */
+    #hero .col-lg-4,
+    #contact .col-lg-4,
+    #hero.shift .col-lg-4,
+    #contact.shift .col-lg-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 25px !important;
+    }
+}
+
+/* ======== TABLETS 768px - 991px (2 CARDS) ======== */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .side-nav {
+        width: 170px !important;
+        margin-left: -170px !important;
+    }
+
+    .side-nav.open {
+        margin-left: 0 !important;
+    }
+
+    nav.shift {
+        margin-left: 170px !important;
+    }
+
+    #hero,
+    #contact {
+        margin-left: 100 !important;
+     
+    }
+
+    #hero.shift,
+    #contact.shift {
+        margin-left: calc(60px + 190px) !important;
+        width: 600px;
+    }
+    #contact.shift {margin-right: 30px;}
+
+    /* TWO CARDS */
+    #hero .col-lg-4,
+    #contact .col-lg-4,
+    #hero.shift .col-lg-4,
+    #contact.shift .col-lg-4 {
+        flex: 0 0 48% !important;
+        max-width: 48% !important;
+        margin-bottom: 25px !important;
+    }
+}

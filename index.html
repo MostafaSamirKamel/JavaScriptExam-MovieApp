@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa_Samir" />
+    <title>Move App</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+    <!--? Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--?  Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--? Animation -->
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <!--? Bootstrap library -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--? Responsive (Media Query) -->
+    <link rel="stylesheet" href="./css/media_query.css" />
+    <!--? main style  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--! side bar  -->
+    <nav class="position-fixed top-0 start-0 vh-100 text-center">
+      <div class="nav-logo">
+        <img src="./img/logo.png" class="img-fluid" alt="logo image" />
+      </div>
+      <div class="nav-menu">
+        <i class="fa-solid fa-align-justify text-black"></i>
+      </div>
+      <div class="nav-social">
+        <i class="fa-solid fa-globe text-black"></i>
+        <i class="fa-solid fa-share-nodes text-black"></i>
+      </div>
+    </nav>
+    <div class="side-nav position-fixed top-0 start-0 vh-100">
+      <div class="menu">
+        <ul>
+          <li><a data-ref="now_playing">Now playing</a></li>
+          <li><a data-ref="popular">Popular</a></li>
+          <li><a data-ref="top_rated">Top Rated</a></li>
+          <li><a data-ref="trending">Trending</a></li>
+          <li><a data-ref="upcoming">Upcoming</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="rights">
+        <div class="icon-social">
+          <a
+            href="https://www.facebook.com/share/1AFCoutanm/?mibextid=wwXIfr"
+            target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/mostafasameer00" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.hackerrank.com/profile/mostafasameer858"
+            target="_blank"
+            ><i class="fa-brands fa-hackerrank"></i
+          ></a>
+        </div>
+        <p class="pt-3">
+          Copyright © 2025 All Rights Reserved. <br />Created by
+          <a
+            href="https://github.com/MostafaSamirKamel"
+            class="link-danger fw-bold"
+            target="_blank"
+            >Mostaf Samir</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!--! Hero Section  -->
+    <section class="container py-5" id="hero">
+      <input
+        class="form-control w-50 mx-auto bg-transparent rounded-pill text-white border border-white px-3"
+        placeholder="Search"
+        id="search"
+      />
+      <div class="row g-1 mt-5 text-white">
+        <!--? move content add by Js  -->
+
+        <!-- ? -->
+      </div>
+
+      <div class="arrow mt-5 d-flex justify-content-around align-items-center">
+        <button type="button" id="arrow-left"  class="bg-transparent border-0" > <i class="fa-solid fa-angles-left"></i>  </button>
+        <p class="text-danger">page <span id="page-number">1</span>  </p>
+        <button type="button" id="arrow-right" class="bg-transparent border-0" > <i class="fa-solid fa-angles-right"></i> </button>
+      </div>
+    </section>
+
+    <!--! contact section -->
+    <section id="contact" class="container text-white py-5" id="contact">
+      <h2>Contact Us</h2>
+
+      <form>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="name"
+              class="form-control mt-4 form-input"
+              placeholder="Enter Your Name"
+              required
+            />
+            <span class="error animate__animated"></span>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="email"
+              id="email"
+              class="form-control mt-4 form-input"
+              placeholder="Enter Your Email"
+              required
+            />
+            <span class="error animate__animated"></span>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="tel"
+              id="phone"
+              class="form-control mt-4 form-input"
+              placeholder="Enter Your Phone"
+              required
+            />
+            <span class="error animate__animated"></span>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="number"
+              id="age"
+              class="form-control mt-4 form-input"
+              placeholder="Enter Your Age"
+              required
+            />
+            <span class="error animate__animated"></span>
+          </div>
+
+          <div class="col-md-6 position-relative">
+            <input
+              type="password"
+              id="password"
+              class="form-control mt-4 form-input"
+              placeholder="Enter Your Password"
+              required
+            />
+            <span class="error animate__animated"></span>
+
+            <span class="showPass">
+              <i data-show="show" class="fa-solid fa-eye-slash"></i>
+            </span>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="password"
+              id="repassword"
+              class="form-control mt-4 form-input"
+              placeholder="Confirm Password"
+              required
+            />
+            <span class="error animate__animated"></span>
+
+            <span class="showPass">
+              <i data-show="show" class="fa-solid fa-eye-slash"></i>
+            </span>
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <button
+              type="submit"
+              class="btn btn-outline-light border-0 rounded-2 mb-3 animate__animated sub-btn"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <div id="back-to-top">
+      <a href="./index.html"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+
+    <!--? Js Files -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
