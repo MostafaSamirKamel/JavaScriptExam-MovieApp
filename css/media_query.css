@@ -20,6 +20,10 @@
     #search {
         width: 75% !important;
     }
+
+    .item{
+        width: 300px;
+    }
 }
 
 
