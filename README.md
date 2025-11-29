@@ -1,8 +1,3 @@
-# JavaScriptExam-MovieApp
-:Absolutely! Here’s a **refined, more professional README.md** for your **JavaScriptExam-MovieApp**, with comments added for CSS files and polished wording throughout:
-
----
-
 # JavaScriptExam-MovieApp 🎬
 
 A fully responsive **Movie Web Application** that allows users to browse, search, and navigate through movies using the **TMDB API**.  
@@ -13,6 +8,7 @@ The application features dynamic browsing, real-time search, pagination, form va
 ## Table of Contents
 
 - [Project Overview](#project-overview)  
+- [Screenshots](#screenshots)
 - [Key Features](#key-features)  
 - [Technologies & Libraries](#technologies--libraries)  
 - [API Integration](#api-integration)  
@@ -22,8 +18,7 @@ The application features dynamic browsing, real-time search, pagination, form va
 - [Form Validation](#form-validation)  
 - [Pagination System](#pagination-system)  
 - [Animations & UI](#animations--ui)  
-- [Project Structure](#project-structure)  
-- [Screenshots](#screenshots)  
+- [Project Structure](#project-structure)    
 - [Author](#author)  
 
 ---
@@ -38,6 +33,13 @@ The application features dynamic browsing, real-time search, pagination, form va
 - Interact with a fully validated contact form with animated feedback.  
 
 All movie data is retrieved from the **TMDB API**, making this a fully frontend-based solution with no server required.
+
+---
+## Screenshots
+
+**Homepage**
+![Homepage](./img/Move%20App.png)
+
 
 ---
 
@@ -162,19 +164,6 @@ JavaScriptExam-MovieApp/
    └─ style.css            # Main app styles and custom UI
 └─ img/                    # Images and screenshots
 ```
-
----
-
-## Screenshots
-
-**Homepage**
-![Homepage](./img/Move%20App.png)
-
-**Movie List**
-![Movie List](./img/movie-list.png)
-
-**Form Validation**
-![Form Validation](./img/form-validation.png)
 
 ---
 
