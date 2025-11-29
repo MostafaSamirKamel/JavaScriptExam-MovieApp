@@ -2,8 +2,6 @@
 Perfect! Here’s a **clean, professional README.md** structure using exactly the sections you listed, with polished content under each heading. I kept it formal and GitHub-friendly:
 
 ---
-
-````markdown
 # Movie Web App 🎬
 
 A fully responsive **Movie Web Application** that allows users to explore, search, and navigate through movies using the **TMDB API**. The app features dynamic browsing, real-time search, pagination, and a validated contact form.
@@ -146,18 +144,21 @@ cd movie-web-app
 ## Project Structure
 
 ```
-movie-web-app/
+movie-app/
 │
 ├─ index.html
-├─ style.css
 ├─ js/
 │  ├─ index.js          # Main JS logic
 │  ├─ api.js            # TMDB API calls
 │  ├─ component.js      # UI components & sidebar
 │  └─ validation.js     # Form validation
-└─ assets/
-   ├─ images/
-   └─ icons/
+└─ css/
+   ├─ all.min.css          # Main JS logic
+   ├─ animate.min.css            # TMDB API calls
+   ├─ bootstrap.min.css      # UI components & sidebar
+   ├─ media_query.css     # Form validation
+   └─ style.css     # Form validation
+   
 ```
 
 ---
@@ -165,27 +166,12 @@ movie-web-app/
 ## Screenshots
 
 **Homepage**
-![Homepage](assets/screenshots/homepage.png)
+![Homepage](./img/Move%20App.png)
 
-**Movie List**
-![Movie List](assets/screenshots/movie-list.png)
-
-**Contact Form Validation**
-![Form Validation](assets/screenshots/form-validation.png)
+*
 
 ---
 
 ## Author
 
-**Your Name** – [GitHub](https://github.com/your-username)
-
-```
-
----
-
-This version is **clean, professional, GitHub-ready**, and matches your requested Table of Contents exactly.  
-
-If you want, I can also **add badges for License, Last Commit, and Live Demo** to make it even more professional and visually appealing for GitHub.  
-
-Do you want me to do that?
-```
+**Your Name** – [GitHub](https://github.com/MostafaSamirKamel)
