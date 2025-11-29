@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Mostafa_Samir" />
     <title>Move App</title>
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
 
     <!--? Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!--! side bar  -->
+    <!--! side bar for desktop -->
     <nav class="position-fixed top-0 start-0 vh-100 text-center">
       <div class="nav-logo">
         <img src="./img/logo.png" class="img-fluid" alt="logo image" />
@@ -35,12 +35,14 @@
       <div class="nav-menu">
         <i class="fa-solid fa-align-justify text-black"></i>
       </div>
+
       <div class="nav-social">
         <i class="fa-solid fa-globe text-black"></i>
         <i class="fa-solid fa-share-nodes text-black"></i>
       </div>
     </nav>
 
+    <!--! side nav for desktop -->
     <div id="side-nav" class="side-nav position-fixed top-0 start-0 vh-100">
       <div class="menu">
         <ul>
@@ -80,7 +82,30 @@
       </div>
     </div>
 
-    <!--! Hero Section  -->
+    <!--! bar-nav for tablet and mobile -->
+    <div id="bar-nav" class="bar-nav">
+      <div class="nav-logo">
+        <img src="./img/logo.png" class="img-fluid" alt="logo image" />
+      </div>
+      
+      <div class="menu">
+        <ul>
+          <li><a data-ref="now_playing">Now playing</a></li>
+          <li><a data-ref="popular">Popular</a></li>
+          <li><a data-ref="top_rated">Top Rated</a></li>
+          <li><a data-ref="trending">Trending</a></li>
+          <li><a data-ref="upcoming">Upcoming</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-social">
+        <i class="fa-solid fa-globe "></i>
+        <i class="fa-solid fa-share-nodes "></i>
+      </div>
+    </div>
+
+    <!--! Hero Section -->
     <section class="container py-5" id="hero">
       <input
         class="form-control w-50 mx-auto bg-transparent rounded-pill text-white border border-white px-3"
@@ -88,20 +113,23 @@
         id="search"
       />
       <div class="row g-1 mt-5 text-white">
-        <!--? move content add by Js  -->
-
+        <!--? move content add by Js -->
         <!-- ? -->
       </div>
 
       <div class="arrow mt-5 d-flex justify-content-around align-items-center">
-        <button type="button" id="arrow-left"  class="bg-transparent border-0" > <i class="fa-solid fa-angles-left"></i>  </button>
-        <p class="text-danger">page <span id="page-number">1</span>  </p>
-        <button type="button" id="arrow-right" class="bg-transparent border-0" > <i class="fa-solid fa-angles-right"></i> </button>
+        <button type="button" id="arrow-left" class="bg-transparent border-0">
+          <i class="fa-solid fa-angles-left"></i>
+        </button>
+        <p class="text-danger">page <span id="page-number">1</span></p>
+        <button type="button" id="arrow-right" class="bg-transparent border-0">
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
       </div>
     </section>
 
     <!--! contact section -->
-    <section id="contact" class="container text-white py-5" id="contact">
+    <section id="contact" class="container text-white py-5">
       <h2>Contact Us</h2>
 
       <form>
@@ -199,6 +227,36 @@
     <div class="loading">
       <span class="loader"></span>
     </div>
+
+    <!--! Footer for tablet and mobile -->
+    <footer>
+      <div class="footer-rights">
+        <div class="icon-social">
+          <a
+            href="https://www.facebook.com/share/1AFCoutanm/?mibextid=wwXIfr"
+            target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/mostafasameer00" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.hackerrank.com/profile/mostafasameer858"
+            target="_blank"
+            ><i class="fa-brands fa-hackerrank"></i
+          ></a>
+        </div>
+        <p class="pt-3">
+          Copyright © 2025 All Rights Reserved.Created by
+          <a
+            href="https://github.com/MostafaSamirKamel"
+            class="link-danger fw-bold"
+            target="_blank"
+            >Mostaf Samir</a
+          >
+        </p>
+      </div>
+    </footer>
 
     <!--? Js Files -->
     <script src="./js/bootstrap.bundle.min.js"></script>
