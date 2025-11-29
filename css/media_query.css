@@ -3,16 +3,7 @@
 /* ========================================= */
 
 @media (max-width: 767px) {
-    nav {
-        background-color: transparent;
-    }
-
-    nav .nav-logo,
-    nav .nav-social {
-        opacity: 1;
-        color: black;
-    }
-
+    
     nav .nav-menu i {
         color: #fff;
     }
@@ -22,7 +13,7 @@
     }
 
     .item{
-        width: 300px;
+        width: 200px;
     }
 }
 
